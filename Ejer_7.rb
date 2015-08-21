@@ -1,9 +1,11 @@
 
-puts "Escribe una i palabra palindroma"
-i = gets.chomp
-while i != i.reverse
-   puts "Escribe una i palabra palindroma"
+i = ""
+while i != "exit"
+	puts "Escribe una palabra palindroma"
    i = gets.chomp
-   break if i == i.reverse
-   puts "#{i} es palindroma"
+   if i == i.reverse
+   	puts "Es una palabra palindroma"
+   else 
+   	puts "Ingrese otr palabra"
+  end
 end
